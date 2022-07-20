@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "dosis", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+#hero h1{
+    font-weight: 600;
+}
+img{
+    width: 100%;
+}
+.card-effect{
+    box-shadow: var(--box-shadow);
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+.card-effect:hover{
+    box-shadow: none;
+    transform: translateY(5px);
+}
+.navbar-brand img{
+height: 50px;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+text-transform: uppercase;
+}
+a{
+    /* font-size: 14px; */
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #252725;
+    text-decoration: none;
+}
+a:hover{
+    color: #3a8878;
+}
+section{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+#hero{
+    background-image: url(./images/slide4.jpg);
+height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+background-position: center;
+background-position: center;
+background-attachment: fixed;
+}
+.overlay{
+    position: relative;
+    z-index: 2;
+}
+.btn{
+    padding: 14px 32px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 100px;
+}
+.btn-primary{
+    background-color: #3a8878;
+    border-color: #3a8878;
+    /* border-radius: 100px; */
+}
+.btn-primary:hover{
+    background-color: transparent;
+    border-color: #3a8878;
+    color: #3a8878;
+}
+.overlay::after{
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 44, 48, 0.6);
+    z-index: -1;
+}
+.navbar{
+    transition: all 0.4s ease;
+}
+.navbar-dark .navbar-nav .nav-link .active{
+    color: #3a8878;
+}
+.intro .divider{
+    background-color: #3a8878;
+    height: 2px;
+    width: 120px;
+    margin: 24px auto;
+}
+.iconbox{
+    width: 60px;
+    height: 60px;
+    background-color: #3a8878;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0  auto 24px auto;
+    color: #fff;
+    flex: none;
+}
+.iconbox .bxs{
+   width: 100px;
+   height: 100px;
+   font-size: 50px;
+}
+.iconbox i{
+    font-weight: 20px;
+}
+#milestone{
+    background-image: url(./images/slide4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.counter .divider{
+    width: 80px;
+    height: 2px;
+    background-color: #3a8878;
+    margin: 18px auto;
+}
+.counter .number{
+    list-style: 1;
+}
+.project{
+    position: relative;
+    overflow: hidden;
+}
+.project-info{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    background-color: #3a8878;
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+.project:hover .project-info{
+    opacity: 1;
+    transform: scale(1);
+}
+.service-box{
+    display: flex;
+}
+#reviews{
+    background-image: url(./images/slide7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.review{
+    max-width: 700px;
+    margin: auto;
+}
+.review .quote{
+    font-size: 54px;
+    color: #3a8878;
+}
+.review small{
+    color: #3a8878;
+    font-size: 16px;
+}
+.pricing-table{
+    background-color: #fff;
+}
+.pricing-table ul{
+    list-style: none;
+    padding: 0;
+}
+.pricing-table ul li{
+    margin-top: 16px;
+}
+.pricing-table.primary{
+    background-color: #3a8878;
+}
+#cta{
+    background-color: #3a8878;
+}
+footer a{
+    color: #fff;
+    margin-left: 10px;
+    margin-left: 10px;
+}
